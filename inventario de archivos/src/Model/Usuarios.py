@@ -2,7 +2,6 @@ from flask import Blueprint, request, jsonify, json
 from common.Toke import *
 from config.db import db, app, ma
 from flask import Flask,  redirect, request, jsonify, json, session, render_template 
-import secrets
 
 class Users(db.Model):
     __tablename__ = "tblusuarios"

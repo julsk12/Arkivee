@@ -14,9 +14,10 @@ class Arkive(db.Model):
     fecha_modificacion = db.Column(db.DateTime, nullable=False)
     id_etiqueta = db.Column(db.Integer, db.ForeignKey('tbletiquetas.id'))
     id_usuarios = db.Column(db.Integer, db.ForeignKey('tblusuarios.id'))
+    archivo = db.Column(db.Blob)
     comentarios = db.Column(db.Text)
 
-    def __init__(self, nombreArchivo, tipo_archivo, ubicacion, fecha_creacion, fecha_modificacion, id_etiqueta, id_usuarios, comentarios):
+    def __init__(self, nombreArchivo, tipo_archivo, ubicacion, fecha_creacion, fecha_modificacion, id_etiqueta, id_usuarios, archivo, comentarios):
         self.nombreArchivo = nombreArchivo
         self.tipo_archivo = tipo_archivo
         self.ubicacion = ubicacion
@@ -24,6 +25,7 @@ class Arkive(db.Model):
         self.fecha_modificacion = fecha_modificacion
         self.id_etiqueta = id_etiqueta
         self.id_usuarios = id_usuarios
+        self.archivo = archivo
         self.comentarios = comentarios
     
     
@@ -34,4 +36,4 @@ class Arkive(db.Model):
 class ArkiveSchema(ma.Schema):
     class Meta:
         fields = ('id','nombreArchivo', 'tipo_archivo', 'ubicacion', 
-                  'fecha_creacion', 'fecha_modificacion', 'id_etiqueta', 'id_usuarios', 'comentarios')
+                  'fecha_creacion', 'fecha_modificacion', 'id_etiqueta', 'id_usuarios', 'archivo', 'comentarios')

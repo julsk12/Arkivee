@@ -5,10 +5,12 @@ from config.db import db, app, ma
 
 #importar routes 
 from api.roles import routes_roles
-from api.etiquets import routes_tag
+from api.categoria import routes_category
 from api.user import routes_user
-from api.archivos import routes_files
-from api.actividades import routes_actividades
+from api.obj import routes_obj
+from api.prov import routes_prov
+from api.presta import routes_prestamos
+from api.de_prov import routes_det
 from api.algo import routes_algo
 
 #rutas
@@ -16,10 +18,12 @@ from api.algo import routes_algo
 
 #ubicacion del api 
 app.register_blueprint(routes_roles, url_prefix="/api")
-app.register_blueprint(routes_tag, url_prefix="/api")
+app.register_blueprint(routes_category, url_prefix="/api")
 app.register_blueprint(routes_user, url_prefix="/api")
-app.register_blueprint(routes_files,  url_prefix="/api")
-app.register_blueprint(routes_actividades,  url_prefix="/api")
+app.register_blueprint(routes_obj,  url_prefix="/api")
+app.register_blueprint(routes_prov,  url_prefix="/api")
+app.register_blueprint(routes_prestamos,  url_prefix="/api")
+app.register_blueprint(routes_det,  url_prefix="/api")
 app.register_blueprint(routes_algo,  url_prefix="/api")
 
 

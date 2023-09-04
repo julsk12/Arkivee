@@ -27,7 +27,7 @@ table {
 
 /* Estilos para las celdas del encabezado de la tabla */
 th {
-    background-color: #9c9696;
+    background-color: #bebdbd;
     color: rgb(0, 0, 0);
     text-align: center;
     font-weight: bold;
@@ -58,3 +58,13 @@ td {
     font-size: 15px;
     margin-top: 20px; /* Agrega margen superior a elementos con la clase "algo" */
 }
+.nose{
+width: 250px;
+text-align: center;
+}
+
+.igual{
+background-color: #ffffff;
+font-weight: normal;
+}
+

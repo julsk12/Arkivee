@@ -5,6 +5,7 @@ body {
     padding: 0;
     margin: 0; /* Elimina márgenes predeterminados del cuerpo */
     font-family: Arial, sans-serif; /* Cambia la fuente predeterminada */
+    font-size: 14px;
 }
 
 /* Estilos del contenedor principal */
@@ -12,7 +13,7 @@ body {
     height: 1344px;
     width: 816px; /* Aprovecha todo el ancho de la ventana */
     max-width: 960px; /* Limita el ancho máximo del contenedor */
-    margin: 20px auto; /* Centra el contenedor en la página y agrega margen superior e inferior */
+    margin: 30px auto; /* Centra el contenedor en la página y agrega margen superior e inferior */
     background-color: #ffffff; /* Fondo blanco para el contenedor */
     padding: 20px; /* Agrega espacio interno al contenedor */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -21,9 +22,11 @@ body {
 /* Estilos para las tablas */
 /* Estilos para las tablas */
 table {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 20px;
     border-collapse: collapse; /* Combina los bordes de las celdas */
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 /* Estilos para las celdas del encabezado de la tabla */
@@ -51,12 +54,12 @@ td {
 
 /* Estilo para la clase "algo" */
 .algo {
-    max-width: 380px;
+    max-width: 680px;
     max-height: 20px;
     text-align: center;
     font-weight: bold;
     border: 1px solid #000;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 20px; /* Agrega margen superior a elementos con la clase "algo" */
 }
 .nose{
@@ -70,6 +73,18 @@ font-weight: normal;
 }
 
 .pan{
-margin-top: 100px;
+margin-top: 150px;
 }
-
+.otra{
+    height: 600px;
+}
+.boton{
+    border: solid 5px gray;
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    background-color: gray;
+    font-style: normal;
+    border-radius: 10px;
+    color:#000 ;
+}

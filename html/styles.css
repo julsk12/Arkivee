@@ -5,7 +5,7 @@ body {
     padding: 0;
     margin: 0; /* Elimina márgenes predeterminados del cuerpo */
     font-family: Arial, sans-serif; /* Cambia la fuente predeterminada */
-    font-size: 14px;
+    font-size: 13px;
 }
 
 /* Estilos del contenedor principal */
@@ -76,7 +76,8 @@ font-weight: normal;
 margin-top: 150px;
 }
 .otra{
-    height: 600px;
+margin-top: 20px;
+    height: 650px;
 }
 .boton{
     border: solid 5px gray;
@@ -87,4 +88,10 @@ margin-top: 150px;
     font-style: normal;
     border-radius: 10px;
     color:#000 ;
+}
+/*.pop{
+margin-bottom: 500px;
+}*/
+.riv{
+font-size: 12.5px;
 }
